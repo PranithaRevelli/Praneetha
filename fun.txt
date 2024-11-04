@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int fun(int x){
+    if(x==0) return 0;
+    printf("%d\t",x);
+    fun(x-1);
+}
+
+int main(){
+    fun(5);
+}
